@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+.inputStyle{
+    padding: 10px;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.inputStyle:focus{
+    box-shadow: 0px 0px 5px 2px rgba(19, 212, 255, 0.7)  
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.top-block{
+    font-size: 14px;
+}
+.top-block p{
+    margin: 10px 0;
+}
+.block{
+    min-width: 650px;
+    min-height: 350px;
+    background-color: #ebeef1;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 30px;
+}
+
+.center-block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center-block input{
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;  
+    outline: none;  
+}
+
+.btn-edit{
+    background-color: #ffbb00;
+    border: #dda200 0.5px solid;
+}
+.btn-edit:hover{
+    background-color: #f0b103;
+}
+.btn-edit:focus{
+    box-shadow: 0px 0px 5px 2px #ffce2ee5  
+}
+.btn-style{
+    color: white;
+    background-color: #02abd1;
+    border: lightgray 0.5px solid;
+}
+.btn-style:hover{
+    background-color: #037f9b;
+}
+.btn-style:focus{
+    box-shadow: 0px 0px 5px 2px rgba(19, 212, 255, 0.7)  
+}
+
+.edit-area{
+    font-size: 18px;
+    width: 100%;
+    resize: none;
+    padding: 20px 20%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+
+.edit-block, .style-block{
+    display:none;
+}
+.bottom-block{
+    position: relative;
+}
+.bottom-block input{
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;  
+    outline: none;  
+    color: white;
+}
+.btn-add{
+    background-color: #f00050;
+    border: rgba(255,255,255,0.5) 0.5px solid;
+}
+.btn-add:hover{
+    background-color: #d60249;
+}
+.btn-add:focus{
+    box-shadow: 0px 0px 5px 2px #ff0055d0  
+}
+.btn-save{
+    background-color: rgb(13, 155, 0);
+    border: 0.5px rgb(11, 131, 0) solid;
+}
+.btn-save:hover{
+    background-color: rgb(11, 131, 0);
+}
+.btn-save:focus{
+    box-shadow: 0px 0px 5px 2px rgb(13, 155, 0);
+}
+
+.boxWithColors{
+    display: none;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.boxWithColors>div{
+    cursor: pointer;
+    width: 60px;
+    height:60px;
+}
+form>div{
+    margin-bottom: 15px;
+}
+.style-block h2{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-size{
+    position: relative;
+    width:550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.form-size input{
+    width:20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.form-size span{
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+}
+.form-family select{
+    width: 550px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.form-colors input{
+    font-size: 15px;
+    border: none;
+    padding: 5px 15px;
+    margin: 0;
+    outline: none;
+    background-color: #6d7375;
+}
+.form-colors input:nth-of-type(1){
+    width: 130px;
+}
+.form-colors input:nth-of-type(2){
+    width: 175px;
+}
+.form-colors input:focus{
+    box-shadow: 0px 0px 5px 2px rgb(143, 148, 142);
+}
+.form-colors input:hover{
+    cursor: pointer;
+    background-color: #5f6264;
+}
+.form-style{
+    width: 150px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.form-style input{
+    width:20px;
+    height: 20px;
+    line-height: 15px;
+    margin-right: 5px;
+}
+.form-style span{
+    width: 200px;
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+}
+.adding{
+    display: none;
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+}
+.adding h1{
+    margin-bottom: 10px;
+}
+.adding input[type='radio']{
+    width:18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.adding label:nth-of-type(1){
+    margin-right: 70px;
+}
+.adding label span{     
+    position: absolute;
+    top: 77px;
+    font-size: 16px;
+}
+[name='tableCreation'] , [name='listCreation']{
+    display: none;
+    margin-top: 10px;
+}
+[name='tableCreation'] .simpleInput, [name='listCreation'] .simpleInput{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+[name='tableCreation'] .simpleInput:nth-of-type(3){
+   margin-top: 15px;
+}
+[name='tableCreation'] .simpleInput input, [name='listCreation'] .simpleInput input, [name='listCreation'] .simpleInput select{
+    font-size: 16px;
+    color: darkslategray;
+    width: 80%;
+}
+[name='tableCreation'] .simpleInput span, [name='listCreation'] .simpleInput span, .tripleInput span{
+    margin-top: 10px;
+}
+.tripleInput{
+    display: flex;
+    justify-content: space-between;
+}
+.tripleInput div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.tripleInput input, .tripleInput select{   
+    font-size: 16px;
+    width: 150px;
+    color: darkslategray;
+
+}
+.btn-create{
+    font-size: 16px;
+    margin-top: 10px;
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;  
+    outline: none;  
+    color: white;
+    padding: 10px;
+    background-color: rgb(13, 155, 0);
+    border: 0.5px rgb(11, 131, 0) solid;
+}
+.btn-create:hover{
+    background-color: rgb(11, 131, 0);
+}
+.btn-create:focus{
+    box-shadow: 0px 0px 5px 2px rgb(13, 155, 0);
+}
+li{
+    margin-left: 20px;
+}
+.show{
+    display: block;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block adding">
+        <h1>Choose what you want</h1>
+        <label for="btn-table">
+            <input type="radio" id="btn-table" name="choose">
+            <span>table</span>
+        </label>
+        <label for="btn-list">
+            <input type="radio" id="btn-list" name="choose">
+            <span>list</span>
+        </label>
+
+        <form name="tableCreation">
+            <div class="simpleInput">
+                <span>Count TR:</span>
+                <input name="countTR" type="text" class="inputStyle" placeholder="Count TR:">
+            </div>
+            <div class="simpleInput">
+                <span>Count TD:</span>
+                <input name="countTD" type="text" class="inputStyle" placeholder="Count TD:">
+            </div>
+            <h2>Add style to your table:</h2>
+            <div class="simpleInput">
+                <span>Width of TD:</span>
+                <input name="widthOfTD" type="text" class="inputStyle" placeholder="Width of TD:">
+            </div>
+            <div class="simpleInput">
+                <span>Height of TD:</span>
+                <input name="heightOfTD" type="text" class="inputStyle" placeholder="Height of TD:">
+            </div>
+            <div class="tripleInput">
+                <span>Width of border:</span>
+                <div>
+                    <input name="widthOfBorder" type="text" class="inputStyle" placeholder="Width of border:">
+                    <span>Type of border:</span>
+                    <select name="typOfBorder" id="" class="inputStyle" placeholder="Type of border:">
+                        <option>solid</option>
+                        <option>dashed</option>
+                        <option>dotted</option>
+                        <option>double</option>
+                    </select>
+                    <span>Color of border:</span>
+                    <select name="colorOfBorder" id="" class="inputStyle" placeholder="Color of border:">
+                        <option>red</option>
+                        <option>green</option>
+                        <option>blue</option>
+                        <option>yellow</option>
+                    </select>
+                </div>
+            </div>
+            <input type="button" value="Create table" name="createTable" class="btn-create">
+        </form>
+
+        <form name="listCreation">
+            <div class="simpleInput">   
+                <span>Count Li:</span>
+                <input name="countLi" type="text" class="inputStyle" placeholder="Count Li:">
+            </div>
+            <div class="simpleInput">
+                <span>Type of marks:</span>
+                <select name="typeOfMarks" class="inputStyle">
+                    <option>circle</option>
+                    <option>disc</option>
+                    <option>square</option>
+                </select>
+            </div>
+            <input type="button" value="Create list" name="createList" class="btn-create">
+        </form>
+        
+    </div>
+    <div class="container">
+        <div class="block top-block">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="center-block">
+            <input type="button" value="edit" class="btn-edit">
+            <input type="button" value="style" class="btn-style">
+        </div>
+        <div class="block bottom-block">
+            <div class="edit-block">
+                <textarea class="edit-area inputStyle"></textarea>
+                <input type="button" value="add" class="btn-add">
+                <input type="button" value="save" class="btn-save">
+            </div>
+            <div class="style-block">
+                <form name="stylingForm">
+                    <h2>Font Size:</h2>
+                    <div class="form-size">
+                        <label for="12px">
+                            <input type="radio" name="size" id="12px">
+                            <span>12px</span>
+                        </label>
+                        <label for="14px">
+                            <input type="radio" name="size" id="14px" checked>
+                            <span>14px</span>
+                        </label>
+                        <label for="16px">
+                            <input type="radio" name="size" id="16px">
+                            <span>16px</span>
+                        </label>
+                        <label for=18px>
+                            <input type="radio" name="size" id="18px">
+                            <span>18px</span>
+                        </label>
+                        <label for="20px">
+                            <input type="radio" name="size" id="20px">
+                            <span>20px</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-family ">
+                        <h2>Font Family:</h2>
+                        <select name="fam" class="inputStyle">
+                            <option value="choose">Choose option</option>
+                            <option>cursive</option>
+                            <option>fantasy</option>
+                            <option>monospace</option>
+                            <option>sens-serif</option>
+                        </select>
+                    </div>
+                    <div class="form-colors">
+                        <h2>Colors:</h2>
+                        <input type="button" value="Color of Text" class="btn-color">
+                        <input type="button" value="Background color" class="btn-background">
+                    </div>
+                    <h2>Style:</h2>
+                    <div class="form-style">
+                        <label for="bold">
+                            <input type="checkbox" name="boldText" id="bold">
+                            <span>Bold text</span>
+                        </label>
+                        <label for="cursive">
+                            <input type="checkbox" name="cursiveText" id="cursive">
+                            <span>Cursive text</span>
+                        </label>
+                    </div>
+                </form>
+                <div class="boxWithColors">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
